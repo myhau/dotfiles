@@ -34,7 +34,7 @@ sudo apt-get update
 
 
 # essential toooooolz
-sudo apt-get -y install vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager openjdk-8-jre openjdk-8-jdk unace unrar zip unzip p7zip-full p7zip-rar sharutils rar arj cabextract libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras libreoffice qalculator maxima virtualbox irssi iotop sysstat baobab gparted xclip vim aria2 usb-creator-gtk numix-icon-theme-circle
+sudo apt-get -y install vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager openjdk-8-jre openjdk-8-jdk unace unrar zip unzip p7zip-full p7zip-rar sharutils rar arj cabextract libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras libreoffice qalculator maxima virtualbox irssi iotop sysstat baobab gparted xclip vim aria2 usb-creator-gtk numix-icon-theme-circle wine
 
 
 
