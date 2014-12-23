@@ -25,7 +25,7 @@ sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 
 # numix theme repo
-sudo add-apt-repository -y ppa:numix/ppa
+sudo apt-add-repository -y ppa:numix/ppa
 
 
 sudo apt-get update
@@ -43,15 +43,15 @@ if [[ $(getconf LONG_BIT) = "64" ]]
 then
 	echo "64bit Detected" &&
 	echo "Installing Google Chrome" &&
-	wget -o chr-inst https://dl.google.com/linux/direct/google-chrome-beta_current_amd64.deb &&
-	sudo dpkg -i chr-inst &&  
-	rm -f chr-inst
+	wget https://dl.google.com/linux/direct/google-chrome-beta_current_amd64.deb &&
+	sudo dpkg -i google-chrome-beta_current_amd64.deb &&
+	rm -f google-chrome-beta_current_amd64.deb
 else
 	echo "32bit Detected" &&
 	echo "Installing Google Chrome" &&
-	wget -o chr-inst https://dl.google.com/linux/direct/google-chrome-beta_current_i386.deb &&
-	sudo dpkg -i chr-inst &&
-	rm -f chr-inst
+	wget https://dl.google.com/linux/direct/google-chrome-beta_current_i386.deb &&
+	sudo dpkg -i google-chrome-beta_current_i386.deb &&
+	rm -f google-chrome-beta_current_i386.deb
 fi
 
 
