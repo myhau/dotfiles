@@ -1,12 +1,19 @@
 # shortcuts
 
+xfconf-query -c xfce4-keyboard-shortcuts -t "String" -n "/commands/custom/Super_L"
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/Super_L" -s "xfce4-popup-whiskermenu"
 
+xfconf-query -c xfce4-keyboard-shortcuts -t "String" -pn "/xfwm4/custom/<Primary><Super>Left" 
 xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Super>Left" -s tile_left_key
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Super>Down" -s tile_down_key
+xfconf-query -c xfce4-keyboard-shortcuts -t "String" -n "/xfwm4/custom/<Primary><Super>Right" 
 xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Super>Right" -s tile_right_key
+xfconf-query -c xfce4-keyboard-shortcuts -t "String" -n "/xfwm4/custom/<Primary><Super>Up" 
 xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Super>Up" -s tile_up_key
+xfconf-query -c xfce4-keyboard-shortcuts -t "String" -n "/xfwm4/custom/<Primary><Super>Down" 
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Super>Down" -s tile_down_key
+xfconf-query -c xfce4-keyboard-shortcuts -t "String" -n "/xfwm4/custom/<Primary><Super>9" 
 xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Super>9" -s maximize_window_key
+xfconf-query -c xfce4-keyboard-shortcuts -t "String" -n "/xfwm4/custom/<Primary><Super>0"
 xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Super>0" -s hide_window_key
 
 
