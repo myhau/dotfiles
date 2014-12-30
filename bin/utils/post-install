@@ -27,13 +27,14 @@ sudo add-apt-repository -y ppa:transmissionbt/ppa
 # numix theme repo
 sudo add-apt-repository -y ppa:numix/ppa
 
+# add btsync repo
+sudo add-apt-repository -y ppa:tuxpoldo/btsync
+
 echo 'deb http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
 echo 'deb-src http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
 wget -O - http://download.videolan.org/pub/debian/videolan-apt.asc|sudo apt-key add -
 
 
-# add btsync repo
-yes | sh -c "$(curl -fsSL http://debian.yeasoft.net/add-btsync-repository.sh)"
 
 sudo apt-get update
 
