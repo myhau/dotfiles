@@ -14,3 +14,5 @@ set expandtab
 
 " backspace repair ( short one for set backspace=indent,eol,start )
 set backspace=2
+
+set modeline
