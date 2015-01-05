@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+Link=`zenity --entry --title="Magnet Link" 2>/dev/null`
+
+peerflix "$Link" --vlc
+
+
