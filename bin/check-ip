@@ -1,3 +1,5 @@
+#!/bin/bash
+
 IP_DIR=$HOME/Files/data
 IP_FILENAME="known_ips"
 if [ -z $1 ]; then

@@ -1,0 +1,11 @@
+---
+# setups everything
+
+
+- name: get all packages
+  hosts: local
+  sudo: True
+
+  roles:
+    - software
+    - configuration
