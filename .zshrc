@@ -45,7 +45,7 @@ ZSH_THEME="mihau"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git wd)
+plugins=(git git-flow sbt scala docker grunt npm node pip)
 
 # User configuration
 
@@ -80,6 +80,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+umask 022
 
 # my part of config ;) 
 export VISUAL=subl
@@ -92,4 +93,3 @@ alias -g NUL='> /dev/null 2>&1'
 alias please='sudo $(fc -ln -1)'
 
 alias hurl='xdg-open https://www.hurl.it NUL'  # curl visualy 
-
