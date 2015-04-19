@@ -1,1 +1,0 @@
-./playbook/roles/configuration/files/.zshrc

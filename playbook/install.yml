@@ -5,7 +5,8 @@
 - name: setup everything 
   hosts: local
   sudo: True
+  user: mihau
 
   roles:
-    # - software
-    - configuration
+    - { role: software, sudo: yes }
+    - { role: configuration, sudo: no }
