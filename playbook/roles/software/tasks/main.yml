@@ -1,13 +1,14 @@
+---
 
 - name: add all providers / repositories 
-  apt_repository: repo={{ itme }} state=present
+  apt_repository: repo={{ item }} state=present
   with_items: 
-    - ppa:videolan/stable-daily
+    - 'ppa:videolan/stable-daily'
   register: repos_downloaded
 
-- name: 
+# - name: 
 
-- name: install chrome
+# - name: install chrome
 
 
 - name: install all packages
