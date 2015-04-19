@@ -2,10 +2,10 @@
 # setups everything
 
 
-- name: get all packages
+- name: setup everything 
   hosts: local
   sudo: True
 
   roles:
-    - software
-    # - configuration
+    # - software
+    - configuration

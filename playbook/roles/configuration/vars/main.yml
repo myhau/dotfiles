@@ -1,0 +1,4 @@
+---
+
+dotfiles_repo_dest: "/home/mihau/workspace/.dotfiles"
+dotfile_repo_link: "https://github.com/myhau/dotfiles.git"
