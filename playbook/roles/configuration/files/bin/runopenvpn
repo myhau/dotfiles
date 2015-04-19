@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo openvpn --config ~/.config/openvpn/frootvpn.ovpn --auth-user-pass ~/.config/openvpn/up --hand-window 8

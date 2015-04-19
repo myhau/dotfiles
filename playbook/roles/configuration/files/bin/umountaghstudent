@@ -1,0 +1,3 @@
+#!/bin/bash
+
+fusermount -u ~/workspace/ssh_mounting/mfudala@agh.student.edu.pl 

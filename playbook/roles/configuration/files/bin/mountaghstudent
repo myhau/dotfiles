@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sshfs aghstu:/home/ietgrp/mfudala ~/workspace/ssh_mounting/mfudala@agh.student.edu.pl

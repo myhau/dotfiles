@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# BASH IZ STUPID
+
+peerflix="/home/mihau/.npm-packages/bin/peerflix"
+
+link=`zenity --entry --title="Magnet Link" 2>/dev/null`
+
+list=`$peerflix "$link" --list`
+
+omg=""
+
+# remove stupid characterz
+IFS=$'\n'
+for i in $list
+do
+    omg=$omg`echo $i | sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"`$'\n'
+done
+
+list=$omg
+
+choosen=`echo "$list" | zenity --list --title="Choose file" --column="Files" 2>/dev/null`
+
+index=`echo "$choosen" | cut -d" " -f1`
+
+$peerflix "$link" -i "$index" --vlc 
+
+# bash is hacky... don't use it... 

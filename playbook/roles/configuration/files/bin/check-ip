@@ -1,0 +1,9 @@
+#!/bin/bash
+
+IP_DIR=$HOME/Files/data
+IP_FILENAME="known_ips"
+if [ -z $1 ]; then
+    echo "You didn't provide ip... Exiting ...."
+    exit 1
+fi
+cat $IP_DIR/$IP_FILENAME | grep $1
