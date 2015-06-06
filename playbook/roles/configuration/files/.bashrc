@@ -140,3 +140,9 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 stty -ixon
 
 [[ -s "/home/mihau/.gvm/scripts/gvm" ]] && source "/home/mihau/.gvm/scripts/gvm"
+
+export NVM_DIR="/home/mihau/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# added by travis gem
+[ -f /home/mihau/.travis/travis.sh ] && source /home/mihau/.travis/travis.sh

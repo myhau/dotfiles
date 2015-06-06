@@ -82,7 +82,7 @@ source $ZSH/oh-my-zsh.sh
 
 umask 022
 
-# my part of config ;) 
+
 export VISUAL=subl
 export EDITOR=$VISUAL
 
@@ -98,14 +98,24 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
+# source nvm
+
+. ~/.nvm/nvm.sh
+
 
 # aliases 
 
-alias -g NUL='> /dev/null 2>&1'
+# alias -g NUL='> /dev/null 2>&1'
+# alias sudo='sudo env PATH=$PATH '
 
-alias sudo='sudo env PATH=$PATH '
+alias gdb='gdb -q'
+
+alias node='node --harmony --use-strict'
 
 alias please='sudo $(fc -ln -1)'
 alias fuck='$(thefuck $(fc -ln -1))' # https://github.com/nvbn/thefuck
 
-alias hurl='xdg-open https://www.hurl.it NUL'  # curl visualy 
+alias hurl='xdg-open https://www.hurl.it > /dev/null 2>&1'  # curl visualy 
+
+# added by travis gem
+[ -f /home/mihau/.travis/travis.sh ] && source /home/mihau/.travis/travis.sh
