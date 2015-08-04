@@ -1,5 +1,0 @@
-#!/bin/bash
-
-
-xdg-open "https://www.google.pl/search?sitesearch=man7.org/linux/man-pages&q=$@" > /dev/null 2>&1
-

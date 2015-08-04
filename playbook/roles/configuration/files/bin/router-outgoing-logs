@@ -1,9 +1,0 @@
-#!/bin/bash
-DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-
-PW=`openssl enc -aes-256-cbc -d -in $DIR/router-pw.enc`
-
-# dirty as fuck, but works :F
-curl -s 192.168.1.1/OutLog.htm -u admin:$PW | grep -E  "[0-9]{1,4}\.[0-9]{1,4}\.[0-9]{1,4}\.[0-9]{1,4}"  | while read line; do  echo -n $line | grep -E "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" -o | tr '\n' ' '; echo -n " "; echo -n $line | grep -E "Arial>[0-9A-Z]{1,20}<\/FONT>" -o | grep -E ">[0-9A-Z]{1,20}<" -o | grep -E "[0-9A-Z]{1,20}" -o; done
-
-

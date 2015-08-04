@@ -1,3 +1,0 @@
----
-
-files_loc: "{{ playbook_dir }}/roles/configuration/files"

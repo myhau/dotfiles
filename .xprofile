@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+
+[[ -f $HOME/.Xdefaults ]] && xrdb -merge $HOME/.Xdefaults
+
+[[ -f $HOME/.Xresources ]] && xrdb -merge $HOME/.Xresources
+
+chkblayout us
+
+# start xbindkeys - a grabbing keys program for X
+xbindkeys
