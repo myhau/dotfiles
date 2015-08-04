@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+TO_WHAT=$1
+[[ -z $TO_WHAT ]] && TO_WHAT="us"
+
+setxkbmap -layout $TO_WHAT -option ctrl:nocaps
+xbindkeys

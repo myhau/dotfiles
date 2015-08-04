@@ -1,0 +1,14 @@
+#!/bin/bash
+
+NOW=`setxkbmap -query | grep -i layout: | sed -e "s/layout: \+//g"`
+
+
+if [[ $NOW == "us" ]]; then
+  TOGGLE_TO="pl"
+elif [[ $NOW == "pl" ]]; then
+  TOGGLE_TO="us"
+else
+  TOGGLE_TO="us"
+fi
+
+chkblayout $TOGGLE_TO

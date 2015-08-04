@@ -1,0 +1,8 @@
+#!/bin/bash
+DIR=`tempfile`
+
+if [ -z $1 ];then exit 1; fi
+vim $DIR 
+if [ ! -f $DIR ];then exit 1; fi
+openssl enc -aes-256-cbc -e -in $DIR -out $1
+rm $DIR

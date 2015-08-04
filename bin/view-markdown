@@ -1,0 +1,11 @@
+#!/bin/bash
+DIR="/home/mihau/bin/"
+CSS=$DIR"/res/style.css"
+if [[ -z "$1" ]] ||  [[ ! -f "$1" ]]; then
+    echo "Filename not provided or file does not exist.";  
+    exit 1;
+fi
+
+pandoc -f markdown -t html5 -c $CSS -o "/tmp/view_markdown_temp.html" $1
+echo "Wait a sec..."
+xdg-open "/tmp/view_markdown_temp.html"  > /dev/null 2>&1 &
