@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+pkill -RTMIN+10 i3blocks #increase sound volume

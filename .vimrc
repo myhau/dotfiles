@@ -39,8 +39,10 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'terryma/vim-expand-region'
 Plugin 'godlygeek/tabular'
-Plugin 'mattn/emmet-vim'
+" Plugin 'mattn/emmet-vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'kshenoy/vim-signature'
+Plugin 'michaeljsmith/vim-indent-object'
 
 
 " the following are examples of different formats supported.
@@ -55,6 +57,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " all of your plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin on    " required
+filetype indent off
 " to ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -111,6 +114,10 @@ syntax on
 
 " line numbers
 set number
+
+
+" tilde (case change) behaves like, an operator
+set tildeop
 
 
 set undofile                " Save undo's after file closes

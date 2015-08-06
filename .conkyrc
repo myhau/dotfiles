@@ -29,11 +29,10 @@ show_graph_range no
 
 TEXT
 [
-{ "full_text" :  "${cpu cpu1}% cpu1", "color" : "\#ffffff"},
-{ "full_text" :  "${cpu cpu2}% cpu2", "color" : "\#ffffff"},
-{ "full_text" :  "${memperc}% ram", "color" : "\#ffffff"},
-{ "full_text" :  "${swap} swap", "color" : "\#ffffff"},
-{ "full_text" : "${diskio /dev/sda} diskio","color" : "\#ffffff" },
+{ "full_text" :  "${cpu cpu1}% ${cpu cpu2}%", "color" : "\#ffffff"},
+{ "full_text" :  "${memperc}%", "color" : "\#ffffff"},
+{ "full_text" :  "${swap}", "color" : "\#ffffff"},
+{ "full_text" : "${diskio /dev/sda}","color" : "\#ffffff" },
 { "full_text" : " ${exec pactl list sinks | grep "Volume: front" | cut -d " " -f6 }", "color" : "\#ffffff"},
 { "full_text" : " ${battery_short C1BA}" , "color" : "\#ffffff" },
 { "full_text" : "${time %a %d %b %I:%M %P}", "color": "\#ffffff" }

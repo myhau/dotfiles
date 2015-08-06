@@ -53,7 +53,7 @@ plugins=(git git-flow git-annex sbt scala docker grunt npm node pip ansible colo
 
 # User configuration
 
-export PATH="/home/mihau/.gvm/bin:/home/mihau/.npm-packages/bin:/home/mihau/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-openjdk-i386/bin:/usr/lib/jvm/java-8-openjdk-i386/jre/bin:/usr/share/scala-2.11.4/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/home/mihau/bin:/home/mihau/bin/git:/home/mihau/.gopath/bin:/usr/bin/core_perl":$PATH
+export PATH="/home/mihau/.gvm/bin:/home/mihau/.npm-packages/bin:/home/mihau/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-openjdk-i386/bin:/usr/lib/jvm/java-8-openjdk-i386/jre/bin:/usr/share/scala-2.11.4/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/home/mihau/bin:/home/mihau/bin/git:/home/mihau/.gopath/bin:/usr/bin/core_perl:/home/mihau/LEARN":$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+scrot -q 10 -e 'convert ephemeral:$f -size 50% -quality 10 `echo ~/Pictures/history/Screenshots/$n | sed -e "s/\.png$/.jpg/g"`' 
+sleep 20
+scrot -q 10 -e 'convert ephemeral:$f -size 50% -quality 10 `echo ~/Pictures/history/Screenshots/$n | sed -e "s/\.png$/.jpg/g"`' 
+sleep 20
+scrot -q 10 -e 'convert ephemeral:$f -size 50% -quality 10 `echo ~/Pictures/history/Screenshots/$n | sed -e "s/\.png$/.jpg/g"`' 
+sleep 20
