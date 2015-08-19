@@ -41,7 +41,7 @@ font pango:Helvetica Neue Light 10
 floating_modifier $mod
 
 # start some apps
-bindsym $mod+x exec urxvt -e zsh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux"
+bindsym $mod+x exec urxvt -e zsh -c "exec tmux"
 bindsym $mod+c exec chromium
 bindsym $mod+z exec zeal
 bindsym $mod+f exec nautilus

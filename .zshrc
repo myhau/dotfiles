@@ -99,6 +99,10 @@ umask 022
 export BROWSER=google-chrome
 
 
+# GO config
+
+export GOPATH="${HOME}/.gopath"
+
 # NPM config 
 
 export NPM_PACKAGES="${HOME}/.npm-packages"
