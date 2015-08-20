@@ -12,8 +12,8 @@
 
 # disable window titlebarz ?
 
-set $default_gaps_inner 10
-set $default_gaps_outer 5
+set $default_gaps_inner 6
+set $default_gaps_outer 1
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
@@ -42,7 +42,7 @@ floating_modifier $mod
 
 # start some apps
 bindsym $mod+x exec urxvt -e zsh -c "exec tmux"
-bindsym $mod+c exec chromium
+bindsym $mod+c exec firefox
 bindsym $mod+z exec zeal
 bindsym $mod+f exec nautilus
 
