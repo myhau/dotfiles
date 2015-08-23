@@ -91,6 +91,10 @@ vmap <Leader>P "+P
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>o :o
+nnoremap <Leader>c :CtrlP<CR>
+nnoremap <Leader>t :CtrlPTag<CR>
+nnoremap <Leader>n :NERDTree<CR>
+
 
 vmap <Leader>r <Plug>(expand_region_expand)
 vmap <Leader>R <Plug>(expand_region_shrink)
@@ -212,6 +216,9 @@ let g:syntastic_cpp_compiler_options = '-std=c++14'
 " delimitMate
 let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
+
+" syntastic
+let g:syntastic_always_populate_loc_list = 1
 
 
 " au FileType clojure,lisp,racket call rainbow#load()
