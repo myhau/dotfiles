@@ -1,0 +1,6 @@
+[user]
+	name = myhau
+	email = mmyhau@gmail.com
+[core]
+	editor = vim 
+	excludesfile = /home/mihau/.gitignore_global
