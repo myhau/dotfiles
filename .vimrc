@@ -88,6 +88,11 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
+nnoremap <Leader>: @:
+nnoremap <Leader>; @:
+vnoremap <Leader>: @:
+vnoremap <Leader>; @:
+
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>o :o
@@ -122,6 +127,9 @@ set number
 
 " tilde (case change) behaves like, an operator
 set tildeop
+
+" hide buffers instead of closing em
+set hidden
 
 
 set undofile                " Save undo's after file closes
