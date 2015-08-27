@@ -1,0 +1,14 @@
+#!/bin/bash
+
+FLE=`mktemp`
+
+echo '[[' > $FLE
+echo '"Default",' >> $FLE
+echo \"$1\", >> $FLE
+echo \"$2\" >> $FLE
+echo ']]'  >> $FLE
+
+cd ~/workspace/anki-gtranslate
+./anki-put.pl "mifud3@gmail.com" `secret-tool lookup anki mutate_anki` $FLE
+
+rm $FLE
