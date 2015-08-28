@@ -135,9 +135,13 @@ export PATH="$CABAL_PATH:$PATH"
 
 alias gdb='gdb -q'
 
-#sublime
+# sublime
 alias subl='subl3'
 alias sublw='subl3 -w'
+
+
+# ssh alias for forcing password authentication
+alias sshpw='ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no'
 
 
 #because of grahpicsmagick (gm)
