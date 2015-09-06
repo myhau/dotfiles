@@ -39,6 +39,7 @@ for i in range(1, len(sys.argv)):
     response = urllib2.urlopen(response)
     get_page = response.read()
     get_page = json.loads(get_page)
+    j = i
     if 'dict' in get_page.keys() and 'entry' in  get_page['dict'][0]:
         for i in get_page['dict'][0]['entry']:
             print '[' + i['word'] + ']'
@@ -46,7 +47,7 @@ for i in range(1, len(sys.argv)):
             for tm in range(0, len(i['reverse_translation']) - 1):
                 subtext = subtext + i['reverse_translation'][tm] + ', '
             subtext += i['reverse_translation'][-1] 
-            print 'command=save_translated_anki ' + '"' + i['word'] + '"' + ' ' + '"' + subtext + '"'
+            print 'command=save_translated_anki ' + '"' + sys.argv[j] + '"' + ' ' + '"' + i['word'] + '"'
             print 'icon='
             print 'subtext=' + subtext
     else:

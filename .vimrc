@@ -100,6 +100,9 @@ nnoremap <Leader>c :CtrlP<CR>
 nnoremap <Leader>t :CtrlPTag<CR>
 nnoremap <Leader>n :NERDTree<CR>
 
+nnoremap <Leader>b :noh<CR>
+vnoremap <Leader>b :noh<CR> 
+
 
 vmap <Leader>r <Plug>(expand_region_expand)
 vmap <Leader>R <Plug>(expand_region_shrink)
@@ -130,6 +133,10 @@ set tildeop
 
 " hide buffers instead of closing em
 set hidden
+
+
+" max text width = 80
+set colorcolumn=80
 
 
 set undofile                " Save undo's after file closes
