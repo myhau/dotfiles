@@ -1,3 +1,0 @@
-#!/bin/bash
-
-sudo openvpn --config ~/.config/openvpn/vpnbook/vpnbook-euro1-tcp80.ovpn --auth-user-pass ~/.config/openvpn/vpnbook/up --hand-window 8
